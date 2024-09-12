@@ -1,0 +1,184 @@
+.header {
+    display: flex;
+    align-items: center;
+    background: url("https://s3-alpha-sig.figma.com/img/ba1b/d90f/de57d19d83898ff7aaa941198e2c7028?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=URnAsqEIx4WtQGcrYr4nIRfke-MnwEHDUeQOQp8i5lpKH3WbZkptruuTYEJW-TfEIwCNsmb9ng7LnwJXCbeGbOtmMXvxVEgJSCC1dR3DqXGjPWMRnIOU4mzwIt5EkxXXO4aovP-sQGxdCp69rL8zCymRpcYxhu3TEKqLlzFGvTkNJekQDCeGjJ8o6ph1ZnxbJ3jHpgVYJ4w5WHm-riz96hr7M2z6vObQkdPhkUnTd8jLkGD9LLjOWMWADq7WCLclDxnSdE3VkDecc83y2ylFo2WDwMUOqQ1LIPky9NZtqfMv8rrNFLZ5c83Wd4FnfXBWYdl6y5GYx18rlrNzhrU0Jg__");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    padding-top: 5vh;
+}
+
+.menu {
+    display: flex;
+    gap: 60px;
+}
+
+.modal {
+    display: none;
+}
+
+.menuButton {
+    display: none;
+}
+
+.svg {
+    margin-top: 20px;
+    margin-left: 6vw;
+    width: 5vw;
+}
+
+a {
+    text-decoration: none;
+    color: #141414;
+    font-size: 18px;
+}
+
+.sendLetter {
+    background-color: black;
+    color: white;
+    padding: 18px 40px;
+    margin-right: 6vw;
+}
+
+
+@media (max-width: 1199px) {
+    a {
+        font-size: 16px;
+    }
+
+    .menu {
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .svg {
+        width: 64px;
+    }
+    .svg2 {
+        width: 64px;
+        margin-top: 20px;
+    }
+
+    .header {
+        padding-top: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .sendLetter {
+        display: none;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        z-index: 1000;
+        display: flex;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    .modalContent {
+        padding: 1.4vh 6vw 0 6vw;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .modal.open {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menuButton {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        width: 50px;
+        margin-right: 6vw;
+        height: 14px;
+        border-bottom: 1px solid #141414;
+        border-top: 1px solid #141414;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+    }
+
+    .modalTop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modalNav {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .closeButton {
+        background: none;
+        border: none;
+    }
+
+    .modalNav a {
+        color: #141414;
+        text-align: left;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .modalTop svg {
+        padding-right: 0;
+    }
+    .sendLetterModal{
+        background-color: #111111;
+        color: #FFFFFF;
+        margin: 45vh 0 20px 0 ;
+        padding: 17px 42px;
+    }
+}
+
+
+@media (max-width: 478px) {
+
+
+
+}
+
+@media (min-width: 1441px) {
+
+}
+

@@ -1,0 +1,43 @@
+.tagList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    padding: 1vw 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.tagBadge {
+    display: flex;
+    padding: 5px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: #FFF;
+    color: #111;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tagBadge:hover {
+    background-color: #ddd; /* Колір при наведенні */
+}
+
+.selected {
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+@media (max-width: 479px) {}
+@media (min-width: 480px) and (max-width: 1199px){}
+@media (min-width: 1441px){}

@@ -1,0 +1,83 @@
+.tagFilterContainer{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 14.8vh;
+    padding: 0 6vw;
+    box-sizing: border-box;
+    background: url("https://s3-alpha-sig.figma.com/img/ba1b/d90f/de57d19d83898ff7aaa941198e2c7028?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=URnAsqEIx4WtQGcrYr4nIRfke-MnwEHDUeQOQp8i5lpKH3WbZkptruuTYEJW-TfEIwCNsmb9ng7LnwJXCbeGbOtmMXvxVEgJSCC1dR3DqXGjPWMRnIOU4mzwIt5EkxXXO4aovP-sQGxdCp69rL8zCymRpcYxhu3TEKqLlzFGvTkNJekQDCeGjJ8o6ph1ZnxbJ3jHpgVYJ4w5WHm-riz96hr7M2z6vObQkdPhkUnTd8jLkGD9LLjOWMWADq7WCLclDxnSdE3VkDecc83y2ylFo2WDwMUOqQ1LIPky9NZtqfMv8rrNFLZ5c83Wd4FnfXBWYdl6y5GYx18rlrNzhrU0Jg__");
+    background-size: cover;
+    background-position: center;
+}
+.filterContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 0 2vw 0;
+}
+
+.filterHeader {
+    color: #141414;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 18px;
+    cursor: pointer;
+}
+.svg{
+    margin-left: 10px;
+}
+.sortList{
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    color: #141414;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 14px;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
+    cursor: pointer;
+}
+.sortList li{
+    list-style: none;
+}
+
+
+
+
+
+
+@media (max-width: 479px) {
+
+}
+@media (max-width: 1199px){
+    .filterHeader {
+        font-size: 16px;
+    }
+    .sortList {
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 768px) {
+    .filterContainer {
+        padding: 5vw 0;
+    }
+    .tagFilterContainer {
+        top: 9.8vh;
+    }
+}
+@media (min-width: 1441px){
+
+}
+
+
+
+
+
+
+

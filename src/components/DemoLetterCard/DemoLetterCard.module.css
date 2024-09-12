@@ -1,0 +1,182 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 2vw;
+    min-height: 400px;
+    position: relative;
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.linkWrapper {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.text {
+    color: rgba(20, 20, 20, 0.70);
+    font-family: Caveat-VariableFont, sans-serif;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    width: 75%;
+}
+
+.likeButton {
+    display: flex;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+h3 {
+    margin: 0;
+    color: #141414;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 24.2px */
+    text-transform: uppercase;
+}
+
+.photo {
+    max-width: 12vw;
+    max-height: 12vw;
+    margin: 1vw;
+    transform: rotate(6deg);
+    flex-shrink: 0;
+}
+
+
+.paragraphWrapper {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+.paragraphWrapper p{
+    margin: 0 1vw 0 0;
+    color: rgba(20, 20, 20, 0.50);
+    font-family: Inter;
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.paragraphWrapper h3{
+    padding-left: 10px;
+}
+
+.blockWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.nameBlock{
+    width: 100%;
+    border-bottom: 1px solid rgba(20, 20, 20, 0.50);
+    box-sizing: border-box;
+}
+
+
+
+
+
+@media (max-width: 479px) {
+    .text {
+        font-size: 30px;
+    }
+    .card {
+        padding: 20px;
+        min-height: 400px;
+    }
+    .linkWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 400px;
+    }
+    .likeButton {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+    .photo {
+        max-width: 100%;
+        max-height: 100%;
+        min-height: 200px;
+        margin: 20px auto;
+        transform: rotate(0);
+        flex-shrink: 0;
+    }
+    .paragraphWrapper p {
+        font-size: 10px;
+    }
+    .infoContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .blockWrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+}
+
+
+
+@media (min-width: 480px) and (max-width: 1199px){
+    .card {
+        min-height: 300px;
+    }
+    .linkWrapper {
+        min-height: 300px;
+    }
+    .paragraphWrapper p {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1441px){
+    .card {
+        min-height: 400px;
+    }
+    .linkWrapper {
+        min-height: 400px;
+    }
+    .paragraphWrapper p {
+        font-size: 16px;
+    }
+}

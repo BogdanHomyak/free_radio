@@ -1,0 +1,148 @@
+
+
+.letterContainer {
+    position: relative;
+    width: 100%;
+    padding: 4vw;
+    box-sizing: border-box;
+    background-color: #E1DFD9; /* Перший фон */
+}
+
+.letterContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://s3-alpha-sig.figma.com/img/ba1b/d90f/de57d19d83898ff7aaa941198e2c7028?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=URnAsqEIx4WtQGcrYr4nIRfke-MnwEHDUeQOQp8i5lpKH3WbZkptruuTYEJW-TfEIwCNsmb9ng7LnwJXCbeGbOtmMXvxVEgJSCC1dR3DqXGjPWMRnIOU4mzwIt5EkxXXO4aovP-sQGxdCp69rL8zCymRpcYxhu3TEKqLlzFGvTkNJekQDCeGjJ8o6ph1ZnxbJ3jHpgVYJ4w5WHm-riz96hr7M2z6vObQkdPhkUnTd8jLkGD9LLjOWMWADq7WCLclDxnSdE3VkDecc83y2ylFo2WDwMUOqQ1LIPky9NZtqfMv8rrNFLZ5c83Wd4FnfXBWYdl6y5GYx18rlrNzhrU0Jg__");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Налаштування прозорості */
+    z-index: 0;
+}
+
+.letterContainer > * {
+    position: relative;
+    z-index: 1; /* Щоб вміст був над бекграундом */
+}
+
+.headerLetter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customLikeButton{
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgba(20, 20, 20, 0.50);
+
+    text-align: right;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contentWrapper {
+    padding: 6vw 15vw 10vw 15vw;
+}
+
+.letterContainer h2{
+    color: #141414;
+    font-family: Inter, sans-serif;
+    font-size: 4.7vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 77px */
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+.imgWrapper {
+    width: 100%;
+    margin: 4.5vw 0;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    gap: 2vw;
+}
+
+.tagsWrapper {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.tagsWrapper h4{
+    color: #141414;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.tagsBlock {
+    display: flex;
+    gap: 14px;
+}
+
+.tags{
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 100px;
+    background: #000;
+    display: flex;
+    padding: 5px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.paragraphWrapper{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5vw 0;
+}
+
+.paragraphWrapper p {
+    color: #141414;
+    font-family: Inter, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+}
+
+.underlineParagraph {
+    position: relative;
+    line-height: 46px;
+    background-image: linear-gradient(transparent calc(100% - 1px), gray 1px);
+    background-size: 100% 46px;
+    background-repeat: repeat-y;
+    background-position: 0 calc(100% - 5px);
+}
+
+
+
+
+
+
+
+@media (max-width: 479px) {}
+@media (min-width: 480px) and (max-width: 1199px){}
+@media (min-width: 1441px){}
