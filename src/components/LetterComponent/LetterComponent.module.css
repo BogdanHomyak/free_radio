@@ -27,23 +27,7 @@
     z-index: 1; /* Щоб вміст був над бекграундом */
 }
 
-.headerLetter {
-    display: flex;
-    justify-content: space-between;
-}
 
-.customLikeButton{
-    display: flex;
-    flex-direction: row-reverse;
-    color: rgba(20, 20, 20, 0.50);
-
-    text-align: right;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-}
 
 .contentWrapper {
     padding: 6vw 15vw 10vw 15vw;

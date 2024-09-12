@@ -10,6 +10,7 @@
 }
 
 .modalContent {
+    width: 100%;
     background: white;
     padding: 4vw 6vw;
     border-radius: 10px;
@@ -17,32 +18,75 @@
     overflow-y: auto;
 }
 
-.closeModal {
+.stickyContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
-    z-index: 1300;
     top: 4vw;
-    right: 6vw;
+    left: 0;
+    padding: 2vw;
+    margin:2vw 6vw;
+    width: 85vw;
+    box-sizing: border-box;
+    z-index: 1300;
+    background-color: #E1DFD9;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2vw;
+    margin:0 6vw;
+    width: 85vw;
+}
+
+.stickyContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://s3-alpha-sig.figma.com/img/ba1b/d90f/de57d19d83898ff7aaa941198e2c7028?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=URnAsqEIx4WtQGcrYr4nIRfke-MnwEHDUeQOQp8i5lpKH3WbZkptruuTYEJW-TfEIwCNsmb9ng7LnwJXCbeGbOtmMXvxVEgJSCC1dR3DqXGjPWMRnIOU4mzwIt5EkxXXO4aovP-sQGxdCp69rL8zCymRpcYxhu3TEKqLlzFGvTkNJekQDCeGjJ8o6ph1ZnxbJ3jHpgVYJ4w5WHm-riz96hr7M2z6vObQkdPhkUnTd8jLkGD9LLjOWMWADq7WCLclDxnSdE3VkDecc83y2ylFo2WDwMUOqQ1LIPky9NZtqfMv8rrNFLZ5c83Wd4FnfXBWYdl6y5GYx18rlrNzhrU0Jg__");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Налаштування прозорості */
+    z-index: 0;
+}
+
+.stickyContainer > * {
+    position: relative;
+    z-index: 1; /* Щоб вміст був над бекграундом */
+}
+
+
+
+.closeModal {
     cursor: pointer;
     background: none;
     border: none;
-    margin: 4vw;
     color: #141414;
-
     font-family: Inter, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 160%;
     border-bottom: 1px solid #141414;
     padding: 0;
-    transition: top 0.3s ease;
 }
 
-.stickyButton {
-    position: fixed;
-    top: 0;
-    right: 6vw;
-    z-index: 1300;
-    transition: top 0.3s ease;
+.customLikeButton {
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgba(20, 20, 20, 0.50);
+    text-align: right;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 2vw;
 }
+

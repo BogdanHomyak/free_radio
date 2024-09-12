@@ -48,13 +48,6 @@ const LetterComponent: FC<LetterComponentProps> = ({ letterId }) => {
 
     return (
         <div className={style.letterContainer}>
-            <div className={style.headerLetter}>
-                <LikeButton
-                    initialLikes={letter.likes}
-                    singleLetterId={letter.id}
-                    customClass={style.customLikeButton}
-                />
-            </div>
             <div className={style.contentWrapper}>
                 <div>
                     <h2>{letter.senderName} {letter.age && `, ${letter.age} років`}</h2>
